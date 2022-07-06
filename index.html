@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Tech Page Generator</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Universal Link to send user back to github repositories -->
+  <div style="position: absolute; width:20px; height: 20px; background-color: black; z-index: 10; top: 0px; left: 0px;">
+  <a href="https://github.com/ID-Dev-2000/Tech-Page-Generator" style="color: white;"><-</a></div>
+
+  <!-- Header -->
+  <header class="w3-container w3-white w3-center" style="padding:40px 16px; height: 50vh;">
+    <h1 class="w3-margin w3-jumbo">COOL TECH</h1>
+    <p class="w3-xlarge">
+      <p>link template origin in readme</p>
+      <a href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_start_page&stacked=h" target="_blank">Link to source</a>
+    </p>
+    <i class="fa-solid fa-code"></i>
+    <h2>We blank</h2>
+    <button id="generateButton" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Generate New</button>
+  </header>
+
+  <!-- First Grid -->
+  <div class="w3-row-padding w3-red w3-padding-64 w3-container" style="height: 50vh;">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1 id="bigHeaderText">To generate</h1>
+        <h2 id="smallHeaderText" class="w3-padding-32">To generate</h2>
+      </div>
+
+      <div class="w3-third w3-center">
+        <i id="anchorID" class="fa fa-podcast w3-padding-64 w3-text-white"></i> <!-- change in JS -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  </script>
+
+  <!-- Functionality script -->
+  <script src="script.js"></script>
+
+</body>
+</html>
